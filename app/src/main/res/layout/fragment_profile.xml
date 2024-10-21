@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ProfileFragmentCL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:textAlignment="center"
+    tools:context=".fragments.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_121sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_person_2_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ShowName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ShowName"
+        android:layout_width="@dimen/_124sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textColor="#9273A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/personalDetailCL"
+        app:layout_constraintTop_toBottomOf="@id/imageView4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personalDetailCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ShowName">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/login_signup_design"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/NameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textColor="#9273A1"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/ShowNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="#9273A1"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/login_signup_design"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+            <TextView
+                android:id="@+id/EmailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/email"
+                android:textAlignment="center"
+                android:textColor="#9273A1"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/ShowEmailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="#9273A1"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/login_signup_design"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/PasswordTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/password"
+                android:textAlignment="center"
+                android:textColor="#9273A1"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/ShowPasswordTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="#9273A1"
+                android:textSize="@dimen/_16ssp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/LogoutButton"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:backgroundTint="#FF9273A1"
+            android:text="@string/logout"
+            android:textColor="#FFFDFD"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/linearLayout3"
+            app:layout_constraintStart_toStartOf="@id/linearLayout3"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

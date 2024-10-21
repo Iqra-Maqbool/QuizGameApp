@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">QuizGame</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="option1Text">Option 1</string>
+    <string name="option2Text">Option 2</string>
+    <string name="option3Text">Option 3</string>
+    <string name="option4Text">Option 4</string>
+    <string name="question">What is your name?</string>
+    <string name="questionType">QUESTION</string>
+    <string name="congratulationsText">Congratulations</string>
+    <string name="tryAgainText">Try Again</string>
+    <string name="coinsText">0</string>
+    <string name="chancesLeft">Chances Left:</string>
+    <string name="spin">Spin</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="logout">Logout</string>
+    <string name="categories">Categories</string>
+    <string name="login">Login</string>
+    <string name="signUp">SignUp</string>
+    <string name="name2">Name</string>
+    <string name="email2">Email</string>
+    <string name="password2">Password</string>
+    <string name="don_t_have_any_account_sign_up_here">Don\'t have any account? Sign Up here</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="signupHere">Don\'t have any account? Signup here</string>
+    <string name="loginHere">Already have an account? Login here</string>
+    <string name="profile">Profile</string>
+    <string name="username">Username</string>
+    <string name="already_have_an_account_login_here">Already have an account? Login here</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">SignUp</string>
+    <string name="PleaseFillAllField">Please Fill All Fields</string>
+    <string name="LoginSuccess">Login Successful</string>
+    <string name="UserNotFound">User Not Found</string>
+    <string name="ErrorFetchingUserData">Error Fetching User Data</string>
+    <string name="LoginFailed">Login Failed</string>
+    <string name="PasswordAndConfirmPasswordDoNotMatch">Password and Confirm Password Do not Match</string>
+    <string name="EmailFormatIsIncorrect">Email Format is Incorrect</string>
+    <string name="SignupSuccess">Signup Successful</string>
+    <string name="FailedToSaveUserData">Failed to save user data</string>
+    <string name="SignupFailed">Signup Failed</string>
+    <string name="FailedToFetchCoinsData">Failed to fetch coins data</string>
+    <string name="Offline">Offline</string>
+    <string name="FailedToFetchSpinChances">Failed to fetch spin chances</string>
+    <string name="FailedToFetchQuestions">Failed to fetch questions</string>
+    <string name="FailedToUpdateSpinChances">Failed to update spin chances</string>
+    <string name="NoSpinChancesAvailable">No Spin Chances Available</string>
+    <string name="FailedToUpdateCoins">Failed To Update Coins</string>
+    <string name="Hundred">100</string>
+    <string name="FiveHundred">500</string>
+    <string name="Thousand">1000</string>
+    <string name="NO_SPIN_CHANCES_AVAILABLE">No Spin Chances Available</string>
+
+
+</resources>
+
