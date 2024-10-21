@@ -1,29 +1,26 @@
 package com.example.quizgame.fragments.spin
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.activity.addCallback
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.quizgame.R
-import com.example.quizgame.ext.showToast
 import com.example.quizgame.databinding.FragmentSpinBinding
+import com.example.quizgame.ext.showToast
+import com.example.quizgame.fragments.baseFragment.BaseFragment
 
-class SpinFragment : Fragment() {
-    private lateinit var binding: FragmentSpinBinding
+class SpinFragment : BaseFragment<FragmentSpinBinding>(FragmentSpinBinding::inflate) {
+
     private val spinViewModel: SpinViewModel by viewModels()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        binding = FragmentSpinBinding.inflate(inflater, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         handleBackPress()
         observeViewModelData()
         setupSpinButton()
         fetchInitialData()
-        return binding.root
     }
 
 
